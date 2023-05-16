@@ -1,8 +1,8 @@
-Feature: Zaping technical test
+Feature: Zapping technical test
   description: As an user i want to go to url provided for test see if i can
   watch videos and also be able to chose other videos to watch
 
-  Scenario: Go to page and check is the right one,
+  Scenario: Go to page and check is the right one, and watch videos
     Given I enter url
     Then I should see page title "Advanced example | Video.js"
     Then I scroll down to video player

@@ -15,7 +15,7 @@ public class BasePage {
         try {
             driver.findElement(element).click();
         }catch (Exception e){
-            throw new Exception("No se pudo clickear sobre el elemento: "+element);
+            throw new Exception("was not able to click on element: "+element);
         }
     }
 
@@ -27,13 +27,6 @@ public class BasePage {
         }
     }
 
-    public String getText (By element) throws Exception {
-        try {
-            return driver.findElement(element).getText();
-        }catch (Exception e){
-            throw new Exception("No se pudo obtener el texto del elemento: "+element);
-        }
-    }
     public static String getTitle() throws Exception {
         try {
             return driver.getTitle();
