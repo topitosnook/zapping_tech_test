@@ -8,6 +8,9 @@ import org.junit.runner.RunWith;
 
 @CucumberOptions(
         features = "src/test/java/features/",
-        glue = {"seleniumgluecode"})
+        glue = {"seleniumgluecode"},
+        plugin = { "pretty",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:" } )
+
 
 public class TestRunner {}
